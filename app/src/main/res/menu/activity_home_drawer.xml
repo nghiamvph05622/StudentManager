@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_NguoiDung"
+            android:title="Thông tin cá nhân" />
+        <item
+            android:id="@+id/nav_theloai"
+            android:title="Lịch học" />
+        <item
+            android:id="@+id/nav_Sach"
+            android:title="Điểm thi" />
+        <item
+            android:id="@+id/nav_HoaDon"
+            android:title="Tin tức" />
+        <!--<item-->
+        <!--android:id="@+id/nav_SachBanChay"-->
+        <!--android:icon="@drawable/ic_trending_up_black_24dp"-->
+        <!--android:title="Sách Bán Chạy" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_ThongKe"-->
+        <!--android:icon="@drawable/ic_merge_type_black_24dp"-->
+        <!--android:title="Thống Kê" />-->
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_accout"
+                android:title="Giới thiệu" />
+            <item
+                android:id="@+id/nav_exit"
+                android:title="Đăng xuất" />
+
+
+        </menu>
+    </item>
+
+</menu>
