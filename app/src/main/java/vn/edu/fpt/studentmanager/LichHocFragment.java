@@ -15,7 +15,7 @@ public class LichHocFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_nguoidung, container, false);
+        View view = inflater.inflate(R.layout.fragment_lichhoc, container, false);
         return view;
     }
 }

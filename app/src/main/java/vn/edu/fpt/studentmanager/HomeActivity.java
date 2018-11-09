@@ -2,6 +2,7 @@ package vn.edu.fpt.studentmanager;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -26,14 +27,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout = findViewById(R.id.drawer_layout);
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new NguoiDungFragment()).commit();
         getSupportActionBar().setTitle("Người Dùng");
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -90,21 +83,20 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         }
         else if (id == R.id.nav_theloai) {
             getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new LichHocFragment()).commit();
-            getSupportActionBar().setTitle("Thể Loại");
+            getSupportActionBar().setTitle("Lịch Học");
             drawerLayout.closeDrawers();
         }
-//
-//        } else if (id == R.id.nav_Sach) {
-//            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new SachFragment()).commit();
-//            getSupportActionBar().setTitle("Sách");
-//            drawerLayout.closeDrawers();
-//
-//        } else if (id == R.id.nav_HoaDon) {
-//            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new HoaDonFragment()).commit();
-//            getSupportActionBar().setTitle("Hóa Đơn");
-//            drawerLayout.closeDrawers();
 
-
+//         else if (id == R.id.nav_Sach) {
+////            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new TinTucFragment()).commit();
+////            getSupportActionBar().setTitle("Tin Tức");
+////            drawerLayout.closeDrawers();
+//        }
+         else if (id == R.id.nav_HoaDon) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new TinTucFragment()).commit();
+            getSupportActionBar().setTitle("Tin Tức");
+            drawerLayout.closeDrawers();
+        }
 //        }
 //        else if (id == R.id.nav_SachBanChay) {
 //            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new SachBanChayFragment()).commit();
